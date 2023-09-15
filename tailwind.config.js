@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
@@ -9,6 +10,9 @@ export default {
         dark300: "#3f3f3f",
         dark400: "#575757",
       },
+      backgroundImage:{
+        hero: "url('./src/assets/beer.jpg')"
+      }
     },
   },
   plugins: [],

@@ -15,11 +15,11 @@ const ProductDetails = () => {
 
 
   return (
-    <section className="pt-32 pb-12 lg:py-32 h-screen flex items-center">
+    <section className="container mx-auto px-5 md:pt-32 pb-12 lg:py-32 h-screen flex items-center dark:text-white">
       <div className="container mx-auto tracking-wider">
         {/* image */}
         <div className=" flex flex-col md:flex-row items-center">
-          <div className="  flex flex-1 justify-center items-center mb-8 lg:mb-0 w-1/12">
+          <div className="  flex flex-1  justify-center items-center mb-8 lg:mb-0 w-1/12">
             <img className=" object-cover  md:h-[500px]" src={image} alt="" />
           </div>
 
@@ -47,8 +47,9 @@ const ProductDetails = () => {
               <IngredientList title="Hops" ingredient={ingredients.hops} />
 
               <span className="text-green-900">Yeast : </span>
-              <span>{ingredients.yeast}</span>
+              <span className="text-black">{ingredients.yeast}</span>
             </div>
+            
             <p className="mb-8">Contributed by: {contributed_by}</p>
           </div>
         </div>
