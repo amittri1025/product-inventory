@@ -13,7 +13,7 @@ const Product = ({ product }) => {
   return (
     /* Here is just one block, with border and an image in it */
     <div className="group">
-      <div className="border border-[#e2e2e2] h-[300px] mb-4 relative overflow-hidden group transition">
+      <div className="border border-[#e2e2e2] dark:border-dark200 h-[300px] mb-4 relative overflow-hidden group transition">
         <div
           className="w-full h-full flex justify-center items-center"
           key={id}
@@ -32,9 +32,9 @@ const Product = ({ product }) => {
           {tagline}
         </div>
         <Link to={`/products/${id}`}>
-            <h2 className="font-semibold mb-1 text-xl group-hover:underline group-hover:underline-offset-1">{name}</h2>
+            <h2 className="font-semibold dark:text-white mb-1 text-xl group-hover:underline group-hover:underline-offset-1">{name}</h2>
         </Link>
-        <div className="font-semibold">{value} {unit}</div>
+        <div className="font-semibold dark:text-white">{value} {unit}</div>
       </div>
     </div>
   );
